@@ -1,355 +1,424 @@
-  /*fonts*/
-  
-  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@200;400&family=Montserrat&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,500;1,600;1,900&display=swap');
-  /* body */
-  
-  html,
-  body {
-      font-family: var(--able);
-      margin: 0;
-      box-sizing: border-box;
-      /* background: var(--elegence); */
-  }
-  /* misc globals */
-  
-   :root {
-      /* colors */
-      --light-salmon: #F19C79;
-      --carmine: #A44A3F;
-      --cadet-gray: #ccdae2;
-      --oxford-blue: #0E1C36;
-      --baby-blue: #AFCBFF;
-      --light-cyan: #d7f9ff;
-      --ivory: #f9fbf2;
-      --linen: #FFEDE1;
-      --isabelline: #EDE7E3;
-      --baby-powder: #FDFFFC;
-      --light-pink: #fda2b1;
-      /*gradients*/
-      --gradient: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-      --cool-gradient: linear-gradient(to bottom, #a8edea 0%, #fed6e3 100%);
-      --sun: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-      --angel: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
-      --elegence: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
-      background-blend-mode: screen;
-      /*fonts*/
-      --able: 'Abel', sans-serif;
-      --playfair: 'Playfair Display', serif;
-      --monsterrat: 'Montserrat', sans-serif;
-      --joesphine: 'Josefin Sans', sans-serif;
-  }
-  
-  a {
-      text-decoration: none;
-  }
-  
-  ul {
-      list-style-type: none;
-  }
-  
-  .flex-row {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-  }
-  /* Nav bar */
-  
-  .nav {
-      background: white;
-      padding: 0 1.5rem;
-      height: 0rem;
-      min-height: 5rem;
-      transition: height 0.5s ease-in-out;
-      overflow: hidden;
-      position: fixed;
-      width: 100%;
-      z-index: 10;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-  }
-  
-  .nav .nav-items {
-      display: flex;
-      margin: 0;
-  }
-  /*Brand Text */
-  
-  .nav .nav-brand a {
-      font-size: 1.7rem;
-      padding: 1rem 0;
-      display: block;
-      font-size: 1.8rem;
-      color: var(--carmine);
-      font-family: var(--playfair);
-      font-style: italic;
-      font-weight: bold;
-  }
-  /* Links */
-  
-  .nav .nav-items .nav-link {
-      padding: 1.2rem 1rem;
-      font-size: 1.4rem;
-      position: relative;
-      color: var(--oxford-blue);
-  }
-  
-  .nav .social {
-      padding: 1.4rem 5rem;
-      margin-left: auto;
-      font-size: 1.6rem;
-  }
-  /* Menu item colors */
-  
-  .nav .nav-items .nav-link:hover {
-      background-color: var(--carmine);
-      transition: all 0.3s ease-in;
-      height: 5rem;
-  }
-  
-  .nav .nav-items a {
-      color: var(--oxford-blue);
-  }
-  
-  .nav .social a {
-      color: var(--oxford-blue);
-  }
-  
-  .nav .social i:hover {
-      color: var(--cadet-gray);
-  }
-  
-  .nav .nav-items .nav-link:hover a {
-      color: var(--baby-powder);
-      transition: 0.2s ease-in;
-  }
-  /*buger icon */
-  
-  .menu {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      display: none;
-  }
-  /*main content body */
-  
-  main .landing-page {
-      background: url("../images/resort2.jpg");
-      background-size: cover;
-      height: 110vh;
-      margin-top: -1px;
-      padding-top: 15rem;
-  }
-  
-  main .about-page {
-      background-color: #ebedee;
-      height: 105vh;
-      margin-top: 0px;
-      padding-top: 15rem;
-  }
-  
-  main .about-page h1,
-  p {
-      text-align: left;
-  }
-  
-  main .landing-page .background h1,
-  h3 {
-      margin: .4rem;
-      text-align: center;
-      font-family: var(--playfair);
-      font-size: 60px;
-      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
-  }
-  
-  main .landing-page .background h2 {
-      font-family: var(--able);
-      font-size: 25px;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.616);
-  }
-  
-  main .landing-page .background {
-      text-align: center;
-      color: white;
-      /* font-size: 2.4rem; */
-  }
-  /* button */
-  
-  main .sign-up {
-      margin-top: 20px;
-      border-color: rgba(0, 0, 0, 0.438);
-      background-color: var(--carmine);
-      border-radius: 15px;
-      color: white;
-      padding: 1rem 1.2rem;
-      text-align: center;
-      display: inline-block;
-      font-weight: 900;
-      font-size: 2.1rem;
-      font-family: var(--able);
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
-      text-decoration: underline;
-      /* font-style: italic; */
-  }
-  
-  main .sign-up:hover {
-      color: var(--carmine);
-      background-color: var(--isabelline);
-      transition: all 0.2s ease-in-out;
-      cursor: pointer;
-  }
-  
-  main .carousel-page {
-      background-color: var(--gradient);
-      padding: 5rem;
-      height: 100vh;
-  }
-  /*end*/
-  
-  main .carousel-page {
-      z-index: 2;
-  }
-  
-  main .carousel-page h1 {
-      text-align: center;
-      font-size: 3rem;
-  }
-  
-  main .footer-section .footer {
-      margin-top: auto;
-      padding: 1rem 3.2rem;
-      min-height: 5vh;
-      justify-content: space-evenly;
-      background-color: var(--baby-powder);
-      display: flex;
-      color: rgb(0, 0, 0);
-      font-size: 1.3rem;
-      box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.322);
-  }
-  
-  main .contact-info .info {
-      margin-top: -1px;
-      padding-top: 15rem;
-      height: 100vh;
-  }
-  
-  main .contact-info .tele-email {
-      display: flex;
-      justify-content: space-evenly;
-  }
-  
-  main .contact-info .tele-email a {
-      color: var(--oxford-blue);
-      font-size: 2rem;
-      font-family: var(--monsterrat);
-  }
-  /* resize viewport */
-  
-  .collapse {
-      height: 110vh;
-  }
-  
-  .line {
-      fill: none;
-      stroke: black;
-      stroke-width: 6;
-      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .line1 {
-      stroke-dasharray: 60 207;
-      stroke-width: 6;
-  }
-  
-  .line2 {
-      stroke-dasharray: 60 60;
-      stroke-width: 6;
-  }
-  
-  .line3 {
-      stroke-dasharray: 60 207;
-      stroke-width: 6;
-  }
-  
-  .opened .line1 {
-      stroke-dasharray: 90 207;
-      stroke-dashoffset: -134;
-      stroke-width: 6;
-  }
-  
-  .opened .line2 {
-      stroke-dasharray: 1 60;
-      stroke-dashoffset: -30;
-      stroke-width: 6;
-  }
-  
-  .opened .line3 {
-      stroke-dasharray: 90 207;
-      stroke-dashoffset: -134;
-      stroke-width: 6;
-  }
-  /*scrollbar*/
-  
-   ::-webkit-scrollbar {
-      width: 15px;
-  }
-  
-   ::-webkit-scrollbar-track {
-      background: #f1f1f1;
-  }
-  
-   ::-webkit-scrollbar-thumb {
-      background: var(--carmine);
-  }
-  
-   ::-webkit-scrollbar-thumb:hover {
-      background: var(--carmine);
-  }
-  
-  @media only screen and (max-width:870px) {
-      .nav {
-          min-height: 8vh;
-      }
-      .nav .nav-items,
-      .nav .nav-menu {
-          flex-direction: column;
-      }
-      /*hide socials*/
-      .nav .social {
-          display: none;
-      }
-      /* toggle the navigation menu */
-      .nav .menu {
-          top: 5px;
-          display: initial;
-          margin-left: 80%;
-          position: fixed;
-      }
-      .nav .nav-items .nav-link:hover {
-          height: 1.85rem;
-      }
-      main .landing-page {
-          background: url("../images/resort2.jpg");
-          padding-top: 5px;
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          height: 100vh;
-          margin-top: 0px;
-          padding-top: 12rem;
-      }
-      main .landing-page .background h1,
-      h3 {
-          font-size: 40px;
-      }
-      main .landing-page .background h2 {
-          font-size: 20px;
-      }
-      main .carousel-page h1 {
-          font-size: 1.5rem;
-      }
-      /* main .landing-page .background {
+          /*fonts*/
+          
+          @import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@200;400&family=Montserrat&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,500;1,600;1,900&display=swap');
+          /* body */
+          
+          html,
+          body {
+              font-family: var(--abel);
+              margin: 0;
+              box-sizing: border-box;
+              -webkit-font-smoothing: antialiased;
+              -moz-font-smoothing: antialiased;
+              -o-font-smoothing: antialiased;
+              text-rendering: optimizeLegibility;
+              background: var(--gradient);
+          }
+          /* misc globals */
+          
+           :root {
+              /* colors */
+              --light-salmon: #F19C79;
+              --carmine: #A44A3F;
+              --cadet-gray: #ccdae2;
+              --oxford-blue: #0E1C36;
+              --baby-blue: #AFCBFF;
+              --light-cyan: #d7f9ff;
+              --ivory: #f9fbf2;
+              --linen: #FFEDE1;
+              --isabelline: #EDE7E3;
+              --baby-powder: #FDFFFC;
+              --light-pink: #fda2b1;
+              /*gradients*/
+              --gradient: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+              --cool-gradient: linear-gradient(to bottom, #a8edea 0%, #fed6e3 100%);
+              --sun: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+              --angel: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
+              --elegence: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
+              background-blend-mode: screen;
+              /*fonts*/
+              --abel: 'Abel', sans-serif;
+              --playfair: 'Playfair Display', serif;
+              --monsterrat: 'Montserrat', sans-serif;
+              --joesphine: 'Josefin Sans', sans-serif;
+          }
+          
+          a {
+              text-decoration: none;
+          }
+          
+          ul {
+              list-style-type: none;
+          }
+          
+          .flex-row {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+          }
+          /* Nav bar */
+          
+          .nav {
+              background: white;
+              padding: 0 1.5rem;
+              height: 0rem;
+              min-height: 5rem;
+              transition: height 0.5s ease-in-out;
+              overflow: hidden;
+              position: fixed;
+              width: 100%;
+              z-index: 10;
+              box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+          }
+          
+          .nav .nav-items {
+              display: flex;
+              margin: 0;
+          }
+          /*Brand Text */
+          
+          .nav .nav-brand a {
+              font-size: 1.7rem;
+              padding: 1rem 0;
+              display: block;
+              font-size: 1.8rem;
+              color: var(--carmine);
+              font-family: var(--playfair);
+              font-style: italic;
+              font-weight: bold;
+          }
+          /* Links */
+          
+          .nav .nav-items .nav-link {
+              padding: 1.2rem 1rem;
+              font-size: 1.4rem;
+              position: relative;
+              color: var(--oxford-blue);
+          }
+          
+          .nav .social {
+              padding: 1.4rem 5rem;
+              margin-left: auto;
+              font-size: 1.6rem;
+          }
+          /* Menu item colors */
+          
+          .nav .nav-items .nav-link:hover {
+              background-color: var(--carmine);
+              transition: all 0.3s ease-in;
+              height: 5rem;
+          }
+          
+          .nav .nav-items a {
+              color: var(--oxford-blue);
+          }
+          
+          .nav .social a {
+              color: var(--oxford-blue);
+          }
+          
+          .nav .social i:hover {
+              color: var(--cadet-gray);
+          }
+          
+          .nav .nav-items .nav-link:hover a {
+              color: var(--baby-powder);
+              transition: 0.2s ease-in;
+          }
+          /*buger icon */
+          
+          .menu {
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+              display: none;
+          }
+          /*main content body */
+          
+          main .landing-page {
+              background: url("../images/resort2.jpg");
+              background-size: cover;
+              height: 110vh;
+              margin-top: -1px;
+              padding-top: 15rem;
+          }
+          
+          main .landing-page .background h1,
+          h3 {
+              margin: .4rem;
+              text-align: center;
+              font-family: var(--playfair);
+              font-size: 60px;
+              text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
+          }
+          
+          main .landing-page .background h2 {
+              font-family: var(--abel);
+              font-size: 25px;
+              text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.616);
+          }
+          
+          main .landing-page .background {
+              text-align: center;
+              color: white;
+              /* font-size: 2.4rem; */
+          }
+          /* button */
+          
+          main .sign-up {
+              margin-top: 20px;
+              border-color: rgba(0, 0, 0, 0.438);
+              background-color: var(--carmine);
+              border-radius: 15px;
+              color: white;
+              padding: 1rem 1.2rem;
+              text-align: center;
+              display: inline-block;
+              font-weight: 900;
+              font-size: 2.1rem;
+              font-family: var(--abel);
+              text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
+              text-decoration: underline;
+          }
+          
+          main .sign-up:hover {
+              background-color: var(--oxford-blue);
+              cursor: pointer;
+              transition: all 0.5s ease-in-out;
+          }
+          
+          main .carousel-page {
+              background: var(--elegence);
+              padding: 5rem;
+              height: 100vh;
+          }
+          /*end*/
+          
+          main .carousel-page {
+              z-index: 2;
+          }
+          
+          main .carousel-page h1 {
+              text-align: center;
+              font-size: 3rem;
+          }
+          
+          main .footer-section .footer {
+              margin-top: auto;
+              padding: 1rem 3.2rem;
+              min-height: 5vh;
+              justify-content: space-evenly;
+              background-color: var(--baby-powder);
+              display: flex;
+              color: rgb(0, 0, 0);
+              font-size: 1.3rem;
+              box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.322);
+          }
+          
+          main .contact-info .info {
+              background: var(--gradient);
+              margin-top: -1px;
+              padding-top: 9rem;
+              height: 100vh;
+          }
+          
+          main .contact-info .tele-email {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding-bottom: 7vh;
+          }
+          
+          main .contact-info .tele-email a {
+              color: var(--oxford-blue);
+              font-size: 2rem;
+              font-family: var(--monsterrat);
+          }
+          
+          main .contact-info .form {
+              max-width: 450px;
+              width: 100%;
+              margin: 0 auto;
+              position: relative;
+              color: var(--oxford-blue);
+              font-size: 1.4rem;
+              font-family: var(--monsterrat);
+          }
+          
+          main .contact-info .form textarea {
+              width: 95%;
+              border: 1px solid #ccc;
+              background: #FFF;
+              margin: 0 0 5px;
+              padding: 10px;
+          }
+          
+          #about-page .about-us-info {
+              background: var(--gradient);
+              margin-top: -1px;
+              padding-top: 9rem;
+              height: 100vh;
+          }
+          
+          #about-page .about-us-info h3 {
+              font-size: 40px;
+              font-family: var(--playfair);
+              color: var(--oxford-blue);
+              text-shadow: none;
+              font-style: italic;
+              justify-content: center;
+          }
+          
+          #about-page .about-us-info p {
+              margin: 0 auto;
+              padding: 20px;
+              font-size: 23px;
+              color: var(--oxford-blue);
+              font-family: var(--abel);
+              text-shadow: none;
+              text-align: justify;
+              max-width: 600px;
+          }
+          
+          #form input,
+          textarea {
+              width: 95%;
+              border: 1px solid rgb(158, 158, 158);
+              background: var(--baby-powder);
+              margin: 0 0 5px;
+              padding: 10px;
+          }
+          
+          #form textarea {
+              height: 200px;
+              max-width: 95%;
+              resize: none;
+          }
+          
+          #form button {
+              background: var(--carmine);
+              cursor: pointer;
+              width: 100%;
+              border: none;
+              color: #FFF;
+              margin: 0 0 5px;
+              padding: 10px;
+              font-size: 15px;
+          }
+          
+          #form button:hover {
+              background-color: var(--oxford-blue);
+              transition: all 0.5s ease-in-out;
+          }
+          /* resize viewport */
+          
+          .collapse {
+              height: 110vh;
+          }
+          
+          .line {
+              fill: none;
+              stroke: black;
+              stroke-width: 6;
+              transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          
+          .line1 {
+              stroke-dasharray: 60 207;
+              stroke-width: 6;
+          }
+          
+          .line2 {
+              stroke-dasharray: 60 60;
+              stroke-width: 6;
+          }
+          
+          .line3 {
+              stroke-dasharray: 60 207;
+              stroke-width: 6;
+          }
+          
+          .opened .line1 {
+              stroke-dasharray: 90 207;
+              stroke-dashoffset: -134;
+              stroke-width: 6;
+          }
+          
+          .opened .line2 {
+              stroke-dasharray: 1 60;
+              stroke-dashoffset: -30;
+              stroke-width: 6;
+          }
+          
+          .opened .line3 {
+              stroke-dasharray: 90 207;
+              stroke-dashoffset: -134;
+              stroke-width: 6;
+          }
+          /*scrollbar*/
+          
+           ::-webkit-scrollbar {
+              width: 15px;
+          }
+          
+           ::-webkit-scrollbar-track {
+              background: #f1f1f1;
+          }
+          
+           ::-webkit-scrollbar-thumb {
+              background: var(--carmine);
+          }
+          
+           ::-webkit-scrollbar-thumb:hover {
+              background: var(--carmine);
+          }
+          
+          @media only screen and (max-width:870px) {
+              .nav {
+                  min-height: 8vh;
+              }
+              .nav .nav-items,
+              .nav .nav-menu {
+                  flex-direction: column;
+              }
+              /*hide socials*/
+              .nav .social {
+                  display: none;
+              }
+              /* toggle the navigation menu */
+              .nav .menu {
+                  top: 5px;
+                  display: initial;
+                  margin-left: 80%;
+                  position: fixed;
+              }
+              .nav .nav-items .nav-link:hover {
+                  height: 1.85rem;
+              }
+              main .landing-page {
+                  background: url("../images/resort2.jpg");
+                  padding-top: 5px;
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  height: 100vh;
+                  margin-top: 0px;
+                  padding-top: 12rem;
+              }
+              main .landing-page .background h1,
+              h3 {
+                  font-size: 40px;
+              }
+              main .landing-page .background h2 {
+                  font-size: 20px;
+              }
+              main .carousel-page h1 {
+                  font-size: 1.5rem;
+              }
+              /* main .landing-page .background {
           font-size: 1.5rem;
       } */
-      main .sign-up {
-          font-size: 1.3rem;
-      }
-  }
+              main .sign-up {
+                  font-size: 1.3rem;
+              }
+          }
