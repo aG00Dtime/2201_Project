@@ -16,10 +16,10 @@ submit_btn.addEventListener("click", () => {
     }
 
     Email.send({
-        Host: " smtp.mailtrap.io",
-        Username: "21409f29db4de0",
-        Password: "84384ea6b23db3",
-        To: "davidalexanderhenry@outlook.com",
+        Host: "smpt server",
+        Username: "username",
+        Password: "pw",
+        To: "email here",
         From: email,
         Subject: "Inquiry By Visitor - " + fname + ' ' + lname + "<br>" + phone,
         Body: msg + "<br>" + phone + "<br>" + fname + ' ' + lname,
