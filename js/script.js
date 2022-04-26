@@ -21,9 +21,6 @@ $('.owl-carousel').owlCarousel({
         autoplayHoverPause: true,
         dotsEach: true,
         lazyLoad: true,
-
-
-
         responsive: {
             0: {
                 items: 1
@@ -37,7 +34,5 @@ $('.owl-carousel').owlCarousel({
             }
         }
     }
-
-
 
 )

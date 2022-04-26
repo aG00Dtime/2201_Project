@@ -5,8 +5,10 @@
           
           html,
           body {
+              background: var(--gradient);
               font-family: var(--abel);
               margin: 0;
+              padding: 0;
               box-sizing: border-box;
               -webkit-font-smoothing: antialiased;
               -moz-font-smoothing: antialiased;
@@ -99,13 +101,13 @@
           .nav .social {
               padding: 1.4rem 5rem;
               margin-left: auto;
-              font-size: 1.6rem;
+              font-size: 1.4rem;
           }
           /* Menu item colors */
           
           .nav .nav-items .nav-link:hover {
               background-color: var(--carmine);
-              transition: all 0.3s ease-in;
+              transition: all 0.25s ease-in-out;
               height: 5rem;
           }
           
@@ -139,7 +141,7 @@
               background: url("../images/resort2.jpg");
               background-size: cover;
               height: 110vh;
-              margin-top: -1px;
+              margin-top: 0;
               padding-top: 15rem;
           }
           
@@ -161,14 +163,13 @@
           main .landing-page .background {
               text-align: center;
               color: white;
-              /* font-size: 2.4rem; */
           }
           /* button */
           
           main .sign-up {
               margin-top: 20px;
               border-color: rgba(0, 0, 0, 0.438);
-              background-color: var(--carmine);
+              background-color: var(--oxford-blue);
               border-radius: 15px;
               color: white;
               padding: 1rem 1.2rem;
@@ -178,13 +179,13 @@
               font-size: 2.1rem;
               font-family: var(--abel);
               text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
-              text-decoration: underline;
+              /* text-decoration: underline; */
           }
           
           main .sign-up:hover {
-              background-color: var(--oxford-blue);
+              background-color: var(--carmine);
               cursor: pointer;
-              transition: all 0.5s ease-in-out;
+              transition: all 0.2s ease-in-out;
           }
           
           main .carousel-page {
@@ -216,23 +217,32 @@
           }
           
           main .contact-info .info {
-              background: var(--gradient);
               margin-top: -1px;
               padding-top: 9rem;
-              height: 100vh;
+              height: 110vh;
+          }
+          
+          main .contact-info .info h3 {
+              font-size: 40px;
+              font-family: var(--playfair);
+              color: var(--oxford-blue);
+              text-shadow: none;
+              font-style: italic;
+              justify-content: center;
           }
           
           main .contact-info .tele-email {
               display: flex;
               flex-direction: column;
               align-items: center;
-              padding-bottom: 7vh;
+              padding-bottom: 1rem;
           }
           
           main .contact-info .tele-email a {
               color: var(--oxford-blue);
-              font-size: 2rem;
+              font-size: 1.4rem;
               font-family: var(--monsterrat);
+              padding: 10px;
           }
           
           main .contact-info .form {
@@ -253,11 +263,38 @@
               padding: 10px;
           }
           
-          #about-page .about-us-info {
+          #about-page {
               background: var(--gradient);
               margin-top: -1px;
               padding-top: 9rem;
-              height: 100vh;
+              height: 110vh;
+          }
+          
+          #activity-page {
+              background: var(--gradient);
+              margin-top: -1px;
+              padding-top: 9rem;
+              height: 110vh;
+          }
+          
+          #activity-page .activities-info h3 {
+              font-size: 40px;
+              font-family: var(--playfair);
+              color: var(--oxford-blue);
+              text-shadow: none;
+              font-style: italic;
+              justify-content: center;
+          }
+          
+          #activity-page .activities-info p {
+              margin: 0 auto;
+              padding: 20px;
+              font-size: 23px;
+              color: var(--oxford-blue);
+              font-family: var(--abel);
+              text-shadow: none;
+              text-align: justify;
+              max-width: 700px;
           }
           
           #about-page .about-us-info h3 {
@@ -279,6 +316,7 @@
               text-align: justify;
               max-width: 600px;
           }
+          /*contact page */
           
           #form input,
           textarea {
@@ -389,7 +427,7 @@
               .nav .menu {
                   top: 5px;
                   display: initial;
-                  margin-left: 80%;
+                  margin-left: 75%;
                   position: fixed;
               }
               .nav .nav-items .nav-link:hover {
