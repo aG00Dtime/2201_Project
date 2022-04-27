@@ -212,7 +212,16 @@
               display: flex;
               color: rgb(0, 0, 0);
               font-size: 1.3rem;
+              text-decoration: none;
               box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.322);
+          }
+          
+          main .footer-section .footer a {
+              color: var(--oxford-blue);
+          }
+          
+          main .footer-section .footer a:hover {
+              color: var(--baby-blue);
           }
           
           main .contact-info .info {
@@ -234,14 +243,16 @@
               display: flex;
               flex-direction: column;
               align-items: center;
-              padding-bottom: 1rem;
+              margin: auto;
+              padding-bottom: 5px;
           }
           
           main .contact-info .tele-email a {
               color: var(--oxford-blue);
-              font-size: 1.4rem;
+              font-size: 1.2rem;
               font-family: var(--monsterrat);
               padding: 10px;
+              text-decoration: none;
           }
           
           main .contact-info .form {
@@ -250,7 +261,7 @@
               margin: 0 auto;
               position: relative;
               color: var(--oxford-blue);
-              font-size: 1.4rem;
+              font-size: 1.2rem;
               font-family: var(--monsterrat);
           }
           
@@ -458,4 +469,10 @@
               main .sign-up {
                   font-size: 1.3rem;
               }
+          }
+          
+          hr.solid {
+              margin: 0;
+              border-top: 3px solid rgb(58, 58, 58);
+              background-color: transparent;
           }
