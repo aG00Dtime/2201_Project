@@ -80,10 +80,9 @@
           /*Brand Text */
           
           .nav .nav-brand a {
-              font-size: 1.7rem;
               padding: 1rem 0;
               display: block;
-              font-size: 1.8rem;
+              font-size: 1.6rem;
               color: var(--carmine);
               font-family: var(--playfair);
               font-style: italic;

@@ -1,3 +1,6 @@
+//animate of scroll init
+AOS.init();
+document.documentElement.style.setProperty('--animate-duration', '.5s');
 // menu
 $(document).ready(function() {
 
