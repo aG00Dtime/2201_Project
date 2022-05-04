@@ -6,7 +6,6 @@
           html,
           body {
               background: var(--gradient);
-              font-family: var(--abel);
               margin: 0;
               padding: 0;
               box-sizing: border-box;
@@ -14,12 +13,15 @@
               -moz-font-smoothing: antialiased;
               -o-font-smoothing: antialiased;
               text-rendering: optimizeLegibility;
-              background: var(--gradient);
           }
           /* misc globals */
           
            :root {
               /* colors */
+              --opal: #C5D8D1;
+              --blue-green: #06BCC1;
+              --veridian: #3F826D;
+              --jungle-green: #071E22;
               --light-salmon: #F19C79;
               --carmine: #A44A3F;
               --cadet-gray: #ccdae2;
@@ -83,7 +85,7 @@
               padding: 1rem 0;
               display: block;
               font-size: 1.6rem;
-              color: var(--carmine);
+              color: var(--veridian);
               font-family: var(--playfair);
               font-style: italic;
               font-weight: bold;
@@ -95,6 +97,7 @@
               font-size: 1.4rem;
               position: relative;
               color: var(--oxford-blue);
+              font-family: var(--abel);
           }
           
           .nav .social {
@@ -105,7 +108,7 @@
           /* Menu item colors */
           
           .nav .nav-items .nav-link:hover {
-              background-color: var(--carmine);
+              background-color: var(--veridian);
               transition: all 0.25s ease-in-out;
               height: 5rem;
           }
@@ -137,7 +140,7 @@
           /*main content body */
           
           main .landing-page {
-              background: url("../images/resort2.jpg");
+              background: url("../images/island.jpg");
               background-size: cover;
               height: 110vh;
               margin-top: 0;
@@ -168,8 +171,8 @@
           main .sign-up {
               margin-top: 20px;
               border-color: rgba(0, 0, 0, 0.438);
-              background-color: var(--oxford-blue);
-              border-radius: 15px;
+              background-color: var(--jungle-green);
+              /* border-radius: 15px; */
               color: white;
               padding: 1rem 1.2rem;
               text-align: center;
@@ -182,7 +185,7 @@
           }
           
           main .sign-up:hover {
-              background-color: var(--carmine);
+              background-color: var(--veridian);
               cursor: pointer;
               transition: all 0.2s ease-in-out;
           }
@@ -201,6 +204,9 @@
           main .carousel-page h1 {
               text-align: center;
               font-size: 3rem;
+              font-family: var(--playfair);
+              font-style: italic;
+              color: var(--oxford-blue);
           }
           
           main .footer-section .footer {
@@ -344,7 +350,7 @@
           }
           
           #form button {
-              background: var(--carmine);
+              background: var(--jungle-green);
               cursor: pointer;
               width: 100%;
               border: none;
@@ -355,7 +361,7 @@
           }
           
           #form button:hover {
-              background-color: var(--oxford-blue);
+              background-color: var(--veridian);
               transition: all 0.5s ease-in-out;
           }
           /* resize viewport */
@@ -414,14 +420,14 @@
           }
           
            ::-webkit-scrollbar-thumb {
-              background: var(--carmine);
+              background: var(--blue-green);
           }
           
            ::-webkit-scrollbar-thumb:hover {
-              background: var(--carmine);
+              background: var(--jungle-green);
           }
           
-          @media only screen and (max-width:870px) {
+          @media only screen and (max-width:895px) {
               .nav {
                   min-height: 8vh;
               }
@@ -438,13 +444,14 @@
                   top: 5px;
                   display: initial;
                   margin-left: 75%;
+                  padding-right: 10%;
                   position: fixed;
               }
               .nav .nav-items .nav-link:hover {
                   height: 1.85rem;
               }
               main .landing-page {
-                  background: url("../images/resort2.jpg");
+                  background: url("../images/mobile1.jpg");
                   padding-top: 5px;
                   background-position: center;
                   background-size: cover;
